@@ -1,7 +1,7 @@
 staticDir = 'static'
 baseURL = 'https://monitorpattern.github.io/dofreez/'
 languageCode = 'fr-fr'
-title = 'Fred et Zoé'
+title = 'Zoé trébuche et Fred vacille'
 #theme = 'hugo-story'
 theme = 'ananke'
 [params]

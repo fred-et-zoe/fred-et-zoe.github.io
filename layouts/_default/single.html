@@ -50,7 +50,7 @@
   </div>
   <div class="container">
     <div class="img">
-      <img src="{{ absURL .Params.cover }}"/>
+      <img src="{{ printf `images/%s` .Params.cover | absURL }}"/>
     </div>
     <div class="scrollable-text">
       <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl4-l" "pr4-l" }} w-two-thirds-l">

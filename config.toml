@@ -1,8 +1,10 @@
 staticDir = 'static'
 baseURL = 'https://fred-et-zoe.github.io/'
 languageCode = 'fr-fr'
+timeZone = 'Europe/Paris'
+defaultContentLanguage = "fr"
 title = 'Fred et Zoé'
-#theme = 'hugo-story'
 theme = 'ananke'
 [params]
     custom_css = ['style.css']
+    date_format = '2 January 2006'

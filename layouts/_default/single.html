@@ -11,13 +11,6 @@
     </div>
     <div class="scrollable-text">
       <header class="mt4 w-100">
-        <aside class="instapaper_ignoref b helvetica tracked">
-            {{/*
-            CurrentSection allows us to use the section title instead of inferring from the folder.
-            https://gohugo.io/variables/page/#section-variables-and-methods
-            */}}
-          {{with .CurrentSection.Title }}{{. | upper }}{{end}}
-        </aside>
         {{ partial "social-share.html" . }}
         <h1 class="f1 athelas mt3 mb1">
           {{- .Title -}}

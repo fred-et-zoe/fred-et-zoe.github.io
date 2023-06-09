@@ -1,47 +1,50 @@
-main {
-    display: flex;
-    flex-flow: column nowrap;
-    height: 80vh;  /* vh = view height */
-}
-
-main img {
-    width: auto;
-    height: auto;
-}
-
-main article {
-    flex: 1;
-    height: inherit;
-    overflow: auto;
-}
-
-
-.title-block {
-    display: flex;
-    margin-left: auto;
-    width: 50vw;
-}
-
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    height: inherit;
-    gap: 20px;
+html, body {
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
+    display: grid;
+    grid-template:
+        "h" auto
+        "c" minmax(0, 1fr)
+        "f" auto;
+}
+
+header {
+    grid-area: h;
+}
+
+footer {
+    grid-area: f;
+}
+
+main {
+    grid-area: c;
+    aspect-ratio: 3/2;
+    max-height: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    height: 100vh;
-    overflow: hidden;
+    flex-direction: row;
+    justify-self: center;
 }
 
 .img {
+    object-fit: contain;
+    max-height: 100%;
     flex: 1;
 }
 
+.img img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+}
+
 .scrollable-text {
+    overflow: auto;
     flex: 1;
-    height: 100%;
-    overflow: scroll;
+}
+
+.scrollable-text > * {
+    padding-left: 1em;
 }

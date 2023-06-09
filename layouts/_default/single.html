@@ -5,11 +5,10 @@
 
 {{ define "main" }}
   {{ $section := .Site.GetPage "section" .Section }}
-  <div class="container">
     <div class="img">
       <img src="{{ printf `images/%s` .Params.cover | absURL }}"/>
     </div>
-    <div class="scrollable-text">
+    <div class="scrollable-text bg-near-white">
       <header class="mt4 w-100">
         {{ partial "social-share.html" . }}
         <h1 class="f1 athelas mt3 mb1">
@@ -44,7 +43,7 @@
           <span class="f6 mv4 dib tracked"> - {{ i18n "wordCount" .WordCount }} </span>
         {{ end }}
       </header>
-      <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl4-l" "pr4-l" }} w-two-thirds-l">
+      <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl4-l" "pr4-l" }}">
         {{- .Content -}}
         {{- partial "tags.html" . -}}
         <div class="mt6 instapaper_ignoref">
@@ -57,7 +56,6 @@
         </div>
       </div>
     </div>
-  </div>
   <!-- <img width="50%" src="{{ absURL .Params.cover }}"/>
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <header class="mt4 w-100">

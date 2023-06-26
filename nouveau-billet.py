@@ -10,6 +10,7 @@ import sys
 titre = ' '.join(sys.argv[1::]).capitalize()
 chapo = re.sub('[^a-z]+', '-', unidecode(titre).lower())
 tz = datetime.datetime.now(datetime.timezone.utc).astimezone().tzinfo
+draft = 'true'
 
 jour = None
 heure = os.environ.get('DATETIME')
@@ -24,7 +25,8 @@ else:
         heure = datetime.datetime.combine(jour, datetime.time(hour=9, tzinfo=tz))
 
 if not heure:
-    heure = datetime.datetime.now(tz).replace(microsecond=0)
+    heure = datetime.datetime.now(tz).replace(microsecond=0) + datetime.timedelta(minutes=15)
+    draft = 'false'
 
 if not jour:
     jour = heure.date()
@@ -36,7 +38,7 @@ content=f'''\
 ---
 title: {titre}
 date: {heure}
-draft: true
+draft: {draft}
 cover: {jour}-{chapo}.jpg
 ---
 '''

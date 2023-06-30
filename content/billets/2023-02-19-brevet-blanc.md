@@ -1,8 +1,8 @@
 ---
 title: Brevet blanc
-date: 2023-02-15T16:35:15+01:00
+date: 2023-02-19T15:34:23+01:00
 draft: false
-cover: 2023-02-15-brevet-blanc.jpg
+cover: 2023-02-19-brevet-blanc.jpg
 ---
 
 Problème : Soit une épingle E,  

@@ -1,6 +1,6 @@
 ---
 title: Brevet blanc
-date: 2023-02-19T15:34:23+01:00
+date: 2023-02-19 15:34:23+01:00
 draft: false
 cover: 2023-02-19-brevet-blanc.jpg
 ---
@@ -57,5 +57,3 @@ J’ai peur._
 Soyez à la hauteur.
 
 _Bientôt mon tour._
-
-

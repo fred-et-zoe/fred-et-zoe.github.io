@@ -1,9 +1,10 @@
 ---
 title: Tourbillon
-date: 2023-06-28T10:49:08+02:00
+date: 2023-06-28 10:49:08+02:00
 draft: false
 cover: 2023-06-28-tourbillon.jpg
 ---
+
 Est-ce que je suis le seul à penser à une crème glacée quand j’entends tourbillon ? Même pas spécialement bonne. Une base blanche, vaguement vanillée, crémeuse, style glace à l’italienne. Avec des petits bouts de truc dedans, de chocolat ou de cacahuette par exemple. Le truc assez gras et sucré que je mange sans trop réfléchir et après je me demande pourquoi.
 
 En tourbillon, il y a aussi le diable de Tasmanie des Looney Tunes. J’ai un gros, gros faible pour l’humour _slapstick_ des vieux cartoons US. Bip bip et vil coyote est mon favori. Pendant un temps, je me sentais coupable de rire d’un spectacle aussi violent.
